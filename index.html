@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Terminal</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+      <div class="header"> bash - JORGE FRANCISCO GARCIA</div>
+      <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Successful login - <span class="error" id="date"></span></div>
+          <div class="title">Mi Portfolio</div>
+          Hola! Bienvenidos a mi portfolio, para ver la lista de commandos ingresá <span class="command">help</span>
+        </section>
+        <div class="prompt">
+          <span class="command">$</span> <span class="title">user</span> <input id="promtInput"/>
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+      <span class="command">$</span> <span class="title">user</span> <span class="promtCloneInput"></span>
+      <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Podes ingresar cualquiera de estos comandos: </div>
+      <div class="indent">
+        <div>
+          <span class="command">about</span>:
+          <div class="indent">Sobre mi</div> 
+        </div>
+        <div>
+          <span class="command">social</span>:
+          <div class="indent">Listado de mis redes sociales</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Las herramientas con las que trabajo</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">Todo sobre mi formación</div> 
+        </div>
+        <div>
+          <span class="command">experience</span>:
+          <div class="indent">Donde trabajé hasta ahora</div> 
+        </div>
+        <div>
+          <span class="command">projects</span>:
+          <div class="indent">Un listado de mis proyectos</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Borrar el historial de la terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">Proyectos: </div>
+      <div class="indent">
+        <span class="title">Proyecto 1 </span> - <a href="https://github.com/jorgefranciscogarcia/paulasafronchik" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Proyecto 2 </span> - <a href="https://github.com/jorgefranciscogarcia/portafolio" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Proyecto 3 </span> - <a href="https://github.com/jorgefranciscogarcia/jorgefranciscogarcia.github.io" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+    </div>
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Skills: </div>
+      <div class="indent">
+        <div>
+          <span class="command">Programacion</span>:
+          <div class="indent">
+            <span class="title">Python</span>
+            <span class="title">CSS</span>
+            <span class="title">HTML</span>
+            <span class="title">GITHUB</span>
+            <span class="title">SQL</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Client Support</span>:
+          <div class="indent">
+            <span class="title">Active Directory</span>
+            <span class="title">Masterización de equipos</span>
+            <span class="title">Soporte remoto / on-site</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Idiomas</span>:
+          <div class="indent">
+            <span class="title">Español</span>
+            <span class="title">Ingles</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mi: </div>
+        <div class="indent">
+          Hola! mi nombre es <span class="command">Jorge Francisco Garcia</span>
+          Soy Argentino, viví hasta Junio de 2023 en Ingeniero Maschwitz, Buenos Aires, luego me mude a New York por 6 meses, actualmente vivo en Madrid.
+        </div> 
+    </div>
+
+    <div class="hidden" id="experience">
+      <div class="sectionTitle">Experiencia: </div>
+      <div class="indent">
+        <span class="title">Client Support - Atos</span> - <span class="command">Agosto 2013 - Julio 2023</span>
+        <div class="indent">
+            Durante una década, desarrollé una sólida experiencia ofreciendo soluciones innovadoras a desafíos complejos.
+        </div> 
+      </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="social">
+      <div class="sectionTitle">Redes sociales: </div>
+      <div class="indent">
+        <span class="title">Github</span> - <span class="command">https://github.com/jorgefranciscogarcia</span>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn</span> - <span class="command">https://www.linkedin.com/in/jorge-francisco-garcia/</span>
+      </div>
+      <div class="indent">
+        <span class="title">Correo</span> - <span class="command">jrgfgarcia@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Formación: </div>
+      <div class="indent">
+        <span class="title">Python</span> <span class="command">Coderhouse</span>
+        <div class="indent">
+          2024
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">QA TESTING</span> <span class="command">Coderhouse</span>
+        <div class="indent">
+          2022
+        </div> 
+      </div>
+    </div>
+</body>
+</html>
